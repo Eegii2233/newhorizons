@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!------------------------SWIPER JS-------------------------->
     <link rel="stylesheet" href="./style.css">
-
+    <script src="https://kit.fontawesome.com/9356919be7.js" crossorigin="anonymous"></script>
+    <!----------------------------360 photo library------------------------>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 </head>
 
-<body class="home-body">
+<body class="home-body" >
     <!--------------------------HOME1 HEADER----------------------------->
 
 
@@ -53,7 +55,6 @@
                 <div class="swiper-slide">
                     <div class="inner-swiper-slide">
                         <img src="./assets/IMG_7256.JPG" alt="building">
-                        <div class="black-opacity"></div>
                         <p>Lorem, ipsum.</p>
                         <h3>Lorem ipsum dolor sit.</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, assumenda.</p>
@@ -63,7 +64,6 @@
                 <div class="swiper-slide">
                     <div class="inner-swiper-slide">
                         <img src="./assets/IMG_7249.JPG" alt="building">
-                        <div class="black-opacity"></div>
                         <p>Lorem, ipsum.</p>
                         <h3>Lorem ipsum dolor sit.</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, assumenda.</p>
@@ -73,7 +73,6 @@
                 <div class="swiper-slide">
                     <div class="inner-swiper-slide">
                         <img src="./assets/IMG_72491.jpg" alt="building">
-                        <div class="black-opacity"></div>
                         <p>Lorem, ipsum.</p>
                         <h3>Lorem ipsum dolor sit.</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, assumenda.</p>
@@ -92,22 +91,22 @@
     <section class="building-features-section">
         <div class="inner-features">
             <div class="feature-card">
-                <img src="./assets/icons/tower.svg" alt="tower icon">
+                <i class="far fa-building"></i>
                 <p>Байгаа талбай</p>
                 <p>456</p>
             </div>
             <div class="feature-card">
-                <img src="./assets/icons/tower.svg" alt="tower icon">
+                <i class="far fa-building"></i>                
                 <p>Нийт Квд</p>
                 <p>6813</p>
             </div>
             <div class="feature-card">
-                <img src="./assets/icons/tower.svg" alt="tower icon">
+                <i class="far fa-building"></i>
                 <p>Орон сууц</p>
                 <p>215</p>
             </div>
             <div class="feature-card">
-                <img src="./assets/icons/tower.svg" alt="tower icon">
+                <i class="far fa-building"></i>
                 <p>барьсан жил</p>
                 <p>2020</p>
             </div>
@@ -117,7 +116,6 @@
     <section class="building-introduction-section">
         <div class="__left">
             <img src="./assets/horizon10.jpg" alt="building photo1">
-            <div class="black-opacity"></div>
         </div>
         <div class="__right">
             <div class="intro-text">
@@ -138,7 +136,7 @@
     </section>
     <section class="services-section">
         <div class="__left">
-           <ul class="service-lists-container">
+            <ul class="service-lists-container">
 
                 <li class="service-title">
                     <a href="#" class="inner-service-title">Lorem ipsum dolor sit</a>
@@ -238,14 +236,14 @@
                         <div class="slide-left">
                             <h3>diverse solution</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                 Quo dolores similique dolore in sit placeat incidunt
-                                  laboriosam nostrum ipsum obcaecati
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                 Quo dolores similique dolore in sit placeat incidunt
-                                  laboriosam nostrum ipsum obcaecati
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                 Quo dolores similique dolore in sit placeat incidunt
-                                  laboriosam nostrum ipsum obcaecati.</p>
+                                Quo dolores similique dolore in sit placeat incidunt
+                                laboriosam nostrum ipsum obcaecati
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quo dolores similique dolore in sit placeat incidunt
+                                laboriosam nostrum ipsum obcaecati
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quo dolores similique dolore in sit placeat incidunt
+                                laboriosam nostrum ipsum obcaecati.</p>
                         </div>
                         <div class="slide-right">
                             <img class="get-photos" src="./assets/IMG_7256.JPG" alt="slide photo">
@@ -304,16 +302,194 @@
         </div>
         <div class="mini-imgs-container" id="miniImgContainer"></div>
     </section>
-    <footer>
-        <img src="./assets/./IMG_72561.jpg" alt="footer building">
-        <div class="black-opacity"></div>
+    <section  class="floor-informations">
+        <img src="./assets/horizon10.jpg" alt="building">
+        <div id="unvisibleList" >
+    
+        </div>
+        <div class="floors-container" id="floorContainer">
+            <ul>
+               <li><span>f</span>18</li> 
+               <li><span>f</span>17</li> 
+               <li><span>f</span>16</li> 
+               <li><span>f</span>15</li> 
+               <li><span>f</span>14</li> 
+               <li><span>f</span>13</li> 
+               <li><span>f</span>12</li> 
+               <li><span>f</span>11</li> 
+               <li><span>f</span>10</li> 
+               <li><span>f</span>9</li> 
+               <li><span>f</span>8</li> 
+               <li><span>f</span>7</li> 
+               <li><span>f</span>6</li> 
+               <li><span>f</span>5</li> 
+               <li><span>f</span>4</li> 
+               <li><span>f</span>3</li> 
+               <li><span>f</span>2</li> 
+               <li><span>f</span>1</li> 
+            </ul>
+        </div>
+        <div class="plan-photos-container" id="planPhotosContainer">
+            <img src="./assets/plan_floor_one.svg" alt="floor one svg">
+            <img src="./assets/IMG_72491.jpg" alt="unknown">
+            <img src="./assets/plan_floor_one.svg" alt="floor one svg">
+            <img src="./assets/IMG_72491.jpg" alt="unknown">
+            <img src="./assets/plan_floor_one.svg" alt="floor one svg">
+            <img src="./assets/IMG_72491.jpg" alt="unknown">
+            <img src="./assets/plan_floor_one.svg" alt="floor one svg">
+            <img src="./assets/IMG_72491.jpg" alt="unknown">
+            <img src="./assets/plan_floor_one.svg" alt="floor one svg">
+            <img src="./assets/IMG_72491.jpg" alt="unknown">
+            <img src="./assets/plan_floor_one.svg" alt="floor one svg">
+            <img src="./assets/IMG_72491.jpg" alt="unknown">
+            <img src="./assets/plan_floor_one.svg" alt="floor one svg">
+            <img src="./assets/IMG_72491.jpg" alt="unknown">
+            <img src="./assets/plan_floor_one.svg" alt="floor one svg">
+            <img src="./assets/IMG_72491.jpg" alt="unknown">
+            <img src="./assets/plan_floor_one.svg" alt="floor one svg">
+            <img src="./assets/IMG_72491.jpg" alt="unknown">
+        </div>
+    </section>
+    <section class="nearby-place-section">
+        <div class="inner-nearby-place">
+            <h3>nearby place</h3>
+            <div class="google-map-container">
+                <div class="places-list">
+                    <ul>
+                        <li><a onclick="clickEffect(this)" >Lorem ipsum dolor sit</a></li>
+                        <li><a onclick="clickEffect(this)" >Lorem ipsum dolor sit</a></li>
+                        <li><a onclick="clickEffect(this)" >Lorem ipsum dolor sit</a></li>
+                        <li><a onclick="clickEffect(this)" >Lorem ipsum dolor sit</a></li>
+                        <li><a onclick="clickEffect(this)" >Lorem ipsum dolor sit</a></li>
+                        <li><a onclick="clickEffect(this)" >Lorem ipsum dolor sit</a></li>
+                        <li><a onclick="clickEffect(this)" >Lorem ipsum dolor sit</a></li>
+                    </ul>
+                </div>
+                <div class="google-map"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mini-blog-section">
+        <div class="inner-mini-blog-section">
+            <h3>suuliin ueiin</h3>
+            <div class="mini-blog-cards-container">
+                <div class="mini-blog-card">
+                    <img src="./assets/horizon10.jpg" alt="bulding photo">
+                    <h4>Lorem ipsum dolor sit.</h4>
+                    <div class="blog-status">
+                        <p><i class="fas fa-clock"></i>2020/7/20</p>
+                        <p><i class="far fa-user"></i>niitelsen Lorem ipsum</p>
+                        <p><i class="far fa-comment"></i>25</p>
+                    </div>
+                    <hr>
+                    <p class="little-article">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nobis, corporis fuga tempora consequuntur dolor, temporibus,
+                        mollitia repudiandae beatae aliquam qui molestiae animi excepturi
+                        cupiditate debitis eligendi exercitationem iste
+                        dolore voluptates!
+                    </p>
+                </div>
+                <div class="mini-blog-card">
+                    <img src="./assets/IMG_7256.JPG" alt="bulding photo">
+                    <h4>Lorem ipsum dolor sit.</h4>
+                    <div class="blog-status">
+                        <p><i class="far fa-clock"></i>2020/7/20</p>
+                        <p><i class="far fa-user"></i>niitelsen Lorem ipsum</p>
+                        <p><i class="far fa-comment"></i>25</p>
+                    </div>
+                    <hr>
+                    <p class="little-article">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nobis, corporis fuga tempora consequuntur dolor, temporibus,
+                        mollitia repudiandae beatae aliquam qui molestiae animi excepturi
+                        cupiditate debitis eligendi exercitationem iste
+                        dolore voluptates!
+                    </p>
+                </div>
+                <div class="mini-blog-card">
+                    <img src="./assets/IMG_7249.JPG" alt="bulding photo">
+                    <h4>Lorem ipsum dolor sit.</h4>
+                    <div class="blog-status">
+                        <p><i class="fas fa-clock"></i>2020/7/20</p>
+                        <p><i class="far fa-user"></i>niitelsen Lorem ipsum</p>
+                        <p><i class="far fa-comment"></i>25</p>
+                    </div>
+                    <hr>
+                    <p class="little-article">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nobis, corporis fuga tempora consequuntur dolor, temporibus,
+                        mollitia repudiandae beatae aliquam qui molestiae animi excepturi
+                        cupiditate debitis eligendi exercitationem iste
+                        dolore voluptates!
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="panaroma-picture-section">
+        <h3>360 view</h3>
+       <!--<iframe src="./panaroma.html" frameborder="0"></iframe>-->
+    </section>
+    <footer class="desktop-footer">
+        <img class="footer-bg" src="./assets/./IMG_72561.jpg" alt="footer building">
+        <div class="inner-footer">
+            <div class="footer-mini-info">
+                <img src="./assets/nh_logo.svg" alt="logo">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Esse quaerat obcaecati beatae neque nostrum harum
+                    dolorem officiis rem facere consequatur?
+                </p>
+                <div class="icons-container">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="sub-pages-title">
+                <h3>sub pages</h3>
+                <div class="sub-pages-list">
+                    <a href="#">
+                        <p><i class="fas fa-angle-double-right"></i>Lorem ipsum dolor</p>
+                    </a>
+                    <a href="#">
+                        <p><i class="fas fa-angle-double-right"></i>Lorem ipsum dolor</p>
+                    </a>
+                    <a href="#">
+                        <p><i class="fas fa-angle-double-right"></i>Lorem ipsum dolor</p>
+                    </a>
+                    <a href="#">
+                        <p><i class="fas fa-angle-double-right"></i>Lorem ipsum dolor</p>
+                    </a>
+                    <a href="#">
+                        <p><i class="fas fa-angle-double-right"></i>Lorem ipsum dolor</p>
+                    </a>
+                    <a href="#">
+                        <p><i class="fas fa-angle-double-right"></i>Lorem ipsum dolor</p>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-contact-us">
+                <h3>contact us</h3>
+                <p><i class="fas fa-phone-alt"></i>+976 99999999</p>
+                <p><i class="far fa-envelope"></i>uuganbat.dev@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio,
+                    officia.</p>
+
+            </div>
+        </div>
     </footer>
+
+    <!------------------------GSAP onscroll-------------------------->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <!------------------------GSAP onscroll END-------------------------->
     <!------------------------SWIPER JS-------------------------->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./home.js"></script>
 
     <!------------------------SWIPER JS-------------------------->
+
 
 </body>
 
