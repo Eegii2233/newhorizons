@@ -37,7 +37,7 @@ function clickToMoveMiddleLine(e) {
             if (i >= intDistanceOfMove) {
                 clearInterval(stopAnimationLeft);
             } else {
-                i = i + 4;
+                i = i + 12;
                 homeOneImgContainerOne.style.width = containerWidth - i + "px";
             }
 
@@ -49,7 +49,7 @@ function clickToMoveMiddleLine(e) {
             clearInterval(stopAnimationRight);
         } else {
 
-            i = i + 4;
+            i = i + 12;
             homeOneImgContainerOne.style.width = containerWidth + i + "px";
         }
 
@@ -57,6 +57,12 @@ function clickToMoveMiddleLine(e) {
 
 
 
+
+}
+
+function showMobileNav() {
+    document.getElementById("mobileNav").classList.toggle("showMobileNav");
+    document.getElementById("menuBarIcon").classList.toggle("whiteMenuBar")
 
 }
 

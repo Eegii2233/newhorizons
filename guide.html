@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guide</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="js_libraries/fontawesome.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body class="get-body-cursor guide-body">
@@ -17,20 +19,27 @@
         <div class="header-inner">
             <div class="__left">
                 <div class="desktop-logo-container">
-                    <img src="./assets/NH logo.png" alt="logo" height="60">
+                    <img src="./assets/nh_logo.png" alt="logo" height="60">
                 </div>
                 <nav class="desktop-nav">
-                    <li><a href="#">home</a></li>
+
+                    <li><a href="./home.html">нүүр</a></li>
                     
-                    <li><a href="#">pages</a></li>
+                    <li><a href="./home.html#buildingFeature">Дадвуу тал</a></li>
 
-                    <li><a href="#">projects</a></li>
+                    <li><a href="./home.html#miniBlog">Сүүлийн үеийн мэдээ</a></li>
 
-                    <li><a href="#">project details</a></li>
+                    <li><a href="./home.html#buildingIntro">танилцуулга</a></li>
 
-                    <li><a href="#">blog</a></li>
+                    <li><a href="./home.html#service">үйлчилгээ</a></li>
 
-                    <li><a href="#">contact</a></li>
+                    <li><a href="./home.html#floorInfo">давхарийн мэдээлэл</a></li>
+
+                    <li><a href="./home.html#sevenReason">7 шалтгаан</a></li>
+                    
+                    <li><a href="./home.html#panaromaSection">360 зураг</a></li>
+
+                    <li><a href="./home.html#nearbyPlaces">Ойр хавийн барилгууд</a></li>
 
                 </nav>
             </div>
@@ -40,16 +49,46 @@
             </div>
         </div>
     </header>
+    <header class="mobile-header">
+        <div class="side-nav">
+            <div onclick="showMobileNav()" class="menu-container">
+                <i class="fas fa-bars menu-icon" id="menuBarIcon"></i>
+            </div>
+            <nav id="mobileNav" onclick="showMobileNav()">
+                <img src="./assets/nh_logo.png" alt="logo">
+
+                <li><a href="./home.html#home">нүүр</a></li>
+
+                <li><a href="./home.html#miniBlog">Сүүлийн үеийн мэдээ</a></li>
+
+                <li><a href="./home.html#buildingIntro">танилцуулга</a></li>
+
+                <li><a href="./home.html#service">үйлчилгээ</a></li>
+
+                <li><a href="./home.html#floorInfo">давхарийн мэдээлэл</a></li>
+
+                <li><a href="./home.html#sevenReason">7 шалтгаан</a></li>
+
+                <li><a href="./home.html#panaromaSection">360 зураг</a></li>
+
+                <li><a href="./home.html#nearbyPlaces">Ойр хавийн барилгууд</a></li>
+                <div class="__right">
+                    <a href="#">mn</a>
+                    <a href="#">en</a>
+                </div>
+            </nav>
+        </div>
+    </header>
 
 
 
     <!--------------------------HOME1 HEADER END----------------------------->
 
-    <section class="home-section">
+    <section class="guide-section">
         <div class="home-img1-container">
             <div class="get-information">
                 <a href="#" class="get-information-inner">
-                    <p>get borshuur</p>
+                    <p>боршуур авах</p>
                 </a>
             </div>
             <img src="./assets/IMG_72561.jpg" alt="building image" width="100">
@@ -62,21 +101,21 @@
             <div class="effected-get-information">
                 <div class="info-container">
                     <a href="#" class="get-information-inner">
-                        <p>get borshuur</p>
+                        <p>боршуур авах</p>
                     </a>
                 </div>
             </div>
         </div>
         <ul class="sub-pages">
-            <li><a href="#">project details</a></li>
-            <li><a href="#">project details</a></li>
-            <li><a href="#">project details</a></li>
-            <li><a href="#">project details</a></li>
-            <li><a href="#">project details</a></li>
-            <li><a href="#">project details</a></li>
+            <li><a href="#">барилгын төлөвлөлт</a></li>
+            <li><a href="#">Аюулгүй байдал</a></li>
+            <li><a href="#">тав тух</a></li>
+            <li><a href="#">мэдээ мэдээлэл</a></li>
+            <li><a href="#">барилгын хийц</a></li>
+            <li><a href="#">хамт олон</a></li>
         </ul>
     </section>
 </body>
-<script src="./main.js"></script>
+<script src="./guide.js"></script>
 
 </html>
