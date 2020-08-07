@@ -36,7 +36,7 @@
 
                     <li><a href="./home.html#floorInfo">давхарийн мэдээлэл</a></li>
 
-                    <li><a href="./home.html#sevenReason">7 шалтгаан</a></li>
+                    <li><a href="./home.html#sevenReason">Давуу тал</a></li>
 
                     <li><a href="./home.html#panaromaSection">360 зураг</a></li>
 
@@ -80,19 +80,19 @@
             </nav>
         </div>
     </header>
-    <div class="send-profile-form" id="profileForm">
+    <div class="send-information" id="sendInformationForm">
 
-<form class="inner-send-profile-form" >
-    <div class="close-button" onclick="closeProfileForm()"></div>   
-    <div class="group">
-      <input type="email"><span class="highlight"></span><span class="bar"></span>
-      <label>Цахим хаяг</label>
+        <form class="inner-send-information">
+            <div class="close-button" onclick="hideSendInformationForm()"></div>
+            <div class="group">
+                <input type="email"><span class="highlight"></span><span class="bar"></span>
+                <label>Цахим хаяг</label>
+            </div>
+            <button type="button" class="button buttonBlue">Илгээх
+                <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+            </button>
+        </form>
     </div>
-    <button type="button" class="button buttonBlue">Илгээх
-      <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
-    </button>
-  </form>
-</div>
     <!--------------------------HOME1 HEADER END----------------------------->
     <section class="home-section" id="home">
         <div class="swiper-container">
@@ -103,7 +103,7 @@
                         <p>Lorem, ipsum.</p>
                         <h3>Lorem ipsum dolor sit.</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, assumenda.</p>
-                        <a href="#">Lorem, ipsum.</a>
+                        <a href="#"  onclick="showSendInformationForm()">Боршуур авах</a>
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -258,9 +258,9 @@
             <ul class="service-lists-container">
 
                 <li class="service-title">
-                    <div class="inner-service-title">Lorem ipsum dolor sit</div>
+                    <div class="inner-service-title">Үйлчилгээний газар</div>
                     <div class="sub-service-list-container">
-                        <a href="#">Lorem wefoiwejfoiwjefipsum dolor</a>
+                        <a href="#">Хаан банк</a>
                         <a href="#">Lorem ipsum dolor</a>
                         <a href="#">Lorem ipsum dolor</a>
                         <a href="#">Lorem ipsum dolor</a>
@@ -486,15 +486,15 @@
             <ul>
                 <li><span>f</span>15
                     <div class="floor-icon-container">
-                    <div class="inner-floor-icon-container">
-                        <p>хаан банк</p>
-                        <img src="./assets/haanbank.png" alt="haan bank">
+                        <div class="inner-floor-icon-container">
+                            <p>хаан банк</p>
+                            <img src="./assets/haanbank.png" alt="haan bank">
+                        </div>
+                        <div class="inner-floor-icon-container">
+                            <p>haanbank</p>
+                            <img src="./assets/haanbank.png" alt="haan bank">
+                        </div>
                     </div>
-                    <div class="inner-floor-icon-container">
-                        <p>haanbank</p>
-                        <img src="./assets/haanbank.png" alt="haan bank">
-                    </div>
-                </div>
                 </li>
                 <li><span>f</span>14
                     <div class="floor-icon-container">
@@ -611,6 +611,7 @@
             </ul>
         </div>
         <div class="plan-photos-container" id="planPhotosContainer" onclick="showFixedInfo()">
+            <div class="plan-photo-hover">ҮЗЭХ</div>
             <img src="./assets/plan_images/plan10.jpg" alt="floor one svg">
             <img src="./assets/plan_images/plan11.jpeg" alt="floor one svg">
             <img src="./assets/plan_images/plan12.png" alt="floor one svg">
@@ -631,21 +632,6 @@
             <img src="./assets/plan_images/plan28.jpeg" alt="floor one svg">
         </div>
         <div class="plan-photos-fullscreen-info" id="planPhotoInfo">
-            <div class="invisible-plan-photo-info">
-                <div class="close-button" onclick="closeFixedInfo()"></div>
-                <div class="inner-plan-photo-info">
-                    <div class="photo-description">
-                        <h3>Lorem ipsum dolor sit</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Tempore, nihil voluptatum dolorem harum dolore itaque
-                            est corrupti eligendi sint dicta molestiae officiis
-                            accusamus atque distinctio quos facere consequatur,
-                            esse placeat.
-                        </p>
-                    </div>
-                    <img src="./assets/plan_floor_one.svg" alt="floor one svg">
-                </div>
-            </div>
             <div class="close-button" onclick="closeFixedInfo()"></div>
             <div class="invisible-plan-photo-info">
                 <div class="inner-plan-photo-info">
@@ -662,7 +648,6 @@
                 </div>
             </div>
             <div class="invisible-plan-photo-info">
-                <div class="close-button" onclick="closeFixedInfo()"></div>
                 <div class="inner-plan-photo-info">
                     <div class="photo-description">
                         <h3>Lorem ipsum dolor sit</h3>
@@ -677,7 +662,6 @@
                 </div>
             </div>
             <div class="invisible-plan-photo-info">
-                <div class="close-button" onclick="closeFixedInfo()"></div>
                 <div class="inner-plan-photo-info">
                     <div class="photo-description">
                         <h3>Lorem ipsum dolor sit</h3>
@@ -692,7 +676,6 @@
                 </div>
             </div>
             <div class="invisible-plan-photo-info">
-                <div class="close-button" onclick="closeFixedInfo()"></div>
                 <div class="inner-plan-photo-info">
                     <div class="photo-description">
                         <h3>Lorem ipsum dolor sit</h3>
@@ -707,7 +690,6 @@
                 </div>
             </div>
             <div class="invisible-plan-photo-info">
-                <div class="close-button" onclick="closeFixedInfo()"></div>
                 <div class="inner-plan-photo-info">
                     <div class="photo-description">
                         <h3>Lorem ipsum dolor sit</h3>
@@ -722,7 +704,6 @@
                 </div>
             </div>
             <div class="invisible-plan-photo-info">
-                <div class="close-button" onclick="closeFixedInfo()"></div>
                 <div class="inner-plan-photo-info">
                     <div class="photo-description">
                         <h3>Lorem ipsum dolor sit</h3>
@@ -737,7 +718,6 @@
                 </div>
             </div>
             <div class="invisible-plan-photo-info">
-                <div class="close-button" onclick="closeFixedInfo()"></div>
                 <div class="inner-plan-photo-info">
                     <div class="photo-description">
                         <h3>Lorem ipsum dolor sit</h3>
@@ -752,7 +732,6 @@
                 </div>
             </div>
             <div class="invisible-plan-photo-info">
-                <div class="close-button" onclick="closeFixedInfo()"></div>
                 <div class="inner-plan-photo-info">
                     <div class="photo-description">
                         <h3>Lorem ipsum dolor sit</h3>
@@ -767,7 +746,6 @@
                 </div>
             </div>
             <div class="invisible-plan-photo-info">
-                <div class="close-button" onclick="closeFixedInfo()"></div>
                 <div class="inner-plan-photo-info">
                     <div class="photo-description">
                         <h3>Lorem ipsum dolor sit</h3>
@@ -782,7 +760,6 @@
                 </div>
             </div>
             <div class="invisible-plan-photo-info">
-                <div class="close-button" onclick="closeFixedInfo()"></div>
                 <div class="inner-plan-photo-info">
                     <div class="photo-description">
                         <h3>Lorem ipsum dolor sit</h3>
@@ -797,7 +774,6 @@
                 </div>
             </div>
             <div class="invisible-plan-photo-info">
-                <div class="close-button" onclick="closeFixedInfo()"></div>
                 <div class="inner-plan-photo-info">
                     <div class="photo-description">
                         <h3>Lorem ipsum dolor sit</h3>
@@ -812,7 +788,6 @@
                 </div>
             </div>
             <div class="invisible-plan-photo-info">
-                <div class="close-button" onclick="closeFixedInfo()"></div>
                 <div class="inner-plan-photo-info">
                     <div class="photo-description">
                         <h3>Lorem ipsum dolor sit</h3>
@@ -827,7 +802,6 @@
                 </div>
             </div>
             <div class="invisible-plan-photo-info">
-                <div class="close-button" onclick="closeFixedInfo()"></div>
                 <div class="inner-plan-photo-info">
                     <div class="photo-description">
                         <h3>Lorem ipsum dolor sit</h3>
@@ -842,7 +816,6 @@
                 </div>
             </div>
             <div class="invisible-plan-photo-info">
-                <div class="close-button" onclick="closeFixedInfo()"></div>
                 <div class="inner-plan-photo-info">
                     <div class="photo-description">
                         <h3>Lorem ipsum dolor sit</h3>
@@ -857,7 +830,6 @@
                 </div>
             </div>
             <div class="invisible-plan-photo-info">
-                <div class="close-button" onclick="closeFixedInfo()"></div>
                 <div class="inner-plan-photo-info">
                     <div class="photo-description">
                         <h3>Lorem ipsum dolor sit</h3>
@@ -872,7 +844,20 @@
                 </div>
             </div>
             <div class="invisible-plan-photo-info">
-                <div class="close-button" onclick="closeFixedInfo()"></div>
+                <div class="inner-plan-photo-info">
+                    <div class="photo-description">
+                        <h3>Lorem ipsum dolor sit</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Tempore, nihil voluptatum dolorem harum dolore itaque
+                            est corrupti eligendi sint dicta molestiae officiis
+                            accusamus atque distinctio quos facere consequatur,
+                            esse placeat.
+                        </p>
+                    </div>
+                    <img src="./assets/plan_floor_one.svg" alt="floor one svg">
+                </div>
+            </div>
+            <div class="invisible-plan-photo-info">
                 <div class="inner-plan-photo-info">
                     <div class="photo-description">
                         <h3>Lorem ipsum dolor sit</h3>
@@ -1044,9 +1029,6 @@
                     </a>
                     <a href="#">
                         <p><i class="fas fa-angle-double-right"></i>мэдээ мэдээлэл</p>
-                    </a>
-                    <a href="#">
-                        <p><i class="fas fa-angle-double-right"></i>барилгын хийц</p>
                     </a>
                     <a href="#">
                         <p><i class="fas fa-angle-double-right"></i>хамт олон</p>

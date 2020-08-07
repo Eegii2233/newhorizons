@@ -159,8 +159,12 @@ for (let i = 0; i <= lengthOfFloorList; i++) {
 }
 //               Onclick events
 // show blured 360
-function closeProfileForm() {
-    document.getElementById("profileForm").style.display = "none";
+function hideSendInformationForm() {
+    document.getElementById("sendInformationForm").style.display = "none";
+}
+
+function showSendInformationForm() {
+    document.getElementById("sendInformationForm").style.display = "grid";
 }
 
 function showPanaroma() {
@@ -198,6 +202,7 @@ function showMobileNav() {
     document.getElementById("mobileNav").classList.toggle("showMobileNav");
 
 }
+
 /*----------------------------HOME JS END-----------------------------*/
 
 
@@ -341,8 +346,6 @@ function initMap() {
 
 
 }
-
-
 
 
 

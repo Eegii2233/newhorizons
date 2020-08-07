@@ -19,7 +19,7 @@
 	.guide-body {
 		.guide-middle-line {
 			width: 1.5vw !important;
-
+			height: 100vh !important;
 			.inner-middle-line {
 				height: 20vw !important;
 			}
@@ -127,7 +127,9 @@
 			width: 100% !important;
 			height: auto !important;
 			z-index: 1000000000000000000;
-
+			.inner-service-title {
+				width: auto !important;
+			}
 			* {
 				user-select: none;
 			}
@@ -135,11 +137,9 @@
 			.service-lists-container {
 				flex-direction: row !important;
 				top: 2.5vw !important;
-
 				.service-title {
 					color: black !important;
 					background: white !important;
-
 					&:hover {
 						background: black !important;
 						transition: 0.3s;
@@ -157,6 +157,9 @@
 						right: 0 !important;
 						top: 100% !important;
 						width: auto !important;
+						a {
+							width: 30vw !important;
+						}
 					}
 
 				}
@@ -271,7 +274,6 @@
 
 	.seven-reason-section {
 		height: auto !important;
-
 		.top-section,
 		.bottom-section {
 			flex-wrap: wrap !important;
@@ -557,7 +559,7 @@ body {
 		background: rgba(24, 24, 24, 0.8);
 		border-bottom: 0.2vw solid rgba(100, 149, 237, 0.8);
 
-		.header-inner {
+		.inner-header {
 			width: 95%;
 			height: 100%;
 			margin: 0 auto;
@@ -566,11 +568,12 @@ body {
 		}
 
 		img {
-			height: 6vw;
+			height: 5vw;
 		}
 
 		.__left {
-			DZWESESEWS .desktop-nav {
+			display: flex;
+			.desktop-nav {
 				height: 100%;
 				display: flex;
 				align-items: center;
@@ -682,7 +685,7 @@ body {
 				z-index: 10;
 				right: 0;
 				width: 0.35vw;
-				height: 100vh;
+				height: 100%;
 				background: black;
 				opacity: 0.6;
 				cursor: col-resize;
@@ -858,7 +861,8 @@ body {
 
 		.sub-pages {
 			position: absolute;
-			top: 10%;
+			top: 50%;
+			transform: translateY(-50%);
 			left: 0;
 			z-index: 10;
 			text-transform: uppercase;
@@ -867,8 +871,8 @@ body {
 			flex-direction: column;
 			padding: 1.5vw;
 			list-style-type: none;
-
-			a {
+			a {	
+				width: 10vw;
 				display: inline-block;
 				text-align: center;
 				padding: 1vw 1.5vw;
@@ -879,29 +883,6 @@ body {
 				position: relative;
 				transition: .3s;
 
-				&::before {
-					content: "";
-					position: absolute;
-					bottom: 50%;
-					left: -0.8vw;
-					width: 1.6vw;
-					height: 0.1vw;
-					background: black;
-					transition: .3s;
-
-				}
-
-				&::after {
-					content: "";
-					position: absolute;
-					bottom: 50%;
-					right: -0.8vw;
-					width: 1.6vw;
-					height: 0.1vw;
-					background: black;
-					transition: .3s;
-
-				}
 
 				&:hover {
 					background: cornflowerblue;
@@ -924,17 +905,17 @@ body {
 /*---------------------------HOME STYLING--------------------------*/
 .home-body {
 	overflow-x: hidden;
-	.send-profile-form {
+	.send-information {
 		position: fixed;
 		width: 100%;
 		height: 100vh;
-		display: grid;
+		display: none;
 		place-items: center;
 		background: rgba(24, 24, 24, 0.7);
 		z-index: 1000000000000000000;
 		
 	}
-	.inner-send-profile-form {
+	.inner-send-information {
 		position: relative;
 		width: 20vw;
 		margin: 4em auto;
@@ -1634,14 +1615,16 @@ body {
 					}
 
 					.inner-service-title {
+						width: 10vw;
 						cursor: pointer;
 						display: inline-block;
 						text-decoration: none;
 						color: black;
 						text-transform: uppercase;
 						border: 0.1vw solid black;
-						padding: 1.5vw;
+						padding: 1.2vw;
 						transition: 0.3s;
+						text-align: center;
 					}
 
 					.sub-service-list-container {
@@ -1670,10 +1653,9 @@ body {
 							padding: 1.5vw;
 							margin: 0.7vw 0;
 							text-align: center;
-							width: auto;
+							width: 11vw;
 							height: 100%;
 							position: relative;
-							white-space: nowrap;
 							transition: .3s;
 							transform: translateY(100%);
 
@@ -1722,7 +1704,7 @@ body {
 			width: 85%;
 			height: 100%;
 			left: 15%;
-
+			z-index: 29;
 			.swiper-container-two {
 				width: 100%;
 				height: 100%;
@@ -2057,7 +2039,7 @@ body {
 
 		img {
 			display: none;
-			border: .5vw solid #181818;
+			border: .3vw solid #181818;
 		}
 
 		.showPlanImage {
@@ -2067,8 +2049,23 @@ body {
 			margin: 0;
 			object-fit: contain;
 			border-radius: 1vw;
-		}
 
+		}
+		.plan-photo-hover {
+			border: .3vw solid #181818;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			display: none;
+			place-items: center;
+			border-radius: 1vw;
+			background: rgba(100, 149, 237, 0.6);
+			font-size: 3.5em;
+			color: white;
+		}
+		&:hover .plan-photo-hover {
+			display: grid;
+		}
 	}
 
 	.plan-photos-fullscreen-info {
@@ -2527,7 +2524,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
+	padding: 2vw 0;
 	h3 {
 		font-size: 2em;
 		text-transform: uppercase;
@@ -2548,15 +2545,15 @@ body {
 		}
 	}
 
-	.top-section,
-	.bottom-section {
+	.top-section {
 		width: 100%;
+		height: 100%;
 		display: flex;
 		justify-content: center;
-		height: 100%;
-
+		height: auto;
 		.reason-card {
 			width: 16vw;
+			height: auto;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
